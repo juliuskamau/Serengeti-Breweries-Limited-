@@ -1,0 +1,94 @@
+.pkt_added {text-decoration:none !important;}
+#jarallax-container-0 {
+	clip: rect(0 1440px 550px 0);
+  clip: rect(0, 1440px, 550px, 0);
+}
+div.hidden,
+.executive ul .tab-pane,
+.card-body .element-invisible,
+.node-webform p.submitted,
+.contacts .nav-pills{
+	display: none;
+}
+
+/*Search*/
+ #search input[type="text"] {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0);
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  border: 0px;
+  margin: 0px auto;
+  margin-top: -51px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: none;
+ }
+ #search .form-submit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 61px;
+  margin-left: -45px;
+  background-color: #BD2D57;
+  border: #BD2D57 1px solid;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #FFF;
+  font-family: Lato-Regular;
+  font-weight: normal;
+ }
+ form#search-form{
+  margin: 7% 0 0 7%;
+ }
+ section.campaigns h2{font-size: 15px;}
+
+.arrow-up .click-tag .profile-arrow-up{
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    content: " ";
+    width: 0;
+    height: 0;
+    margin: 0 0 0 -10px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #F0F0F0;
+    pointer-events: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+.arrow-inactive{
+  visibility: hidden;
+}
+.arrow-active {
+  visibility: visible;
+}
+
+.node-webform  .webform-client-form input[type='submit']{
+color: #fff;
+background-color: #A7353A;
+border-color: #A7353A;
+width: 100%;
+padding: 10px 0px;
+text-transform: uppercase;
+display: inline-block;
+font-weight: 400;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+border: 1px solid transparent;
+padding: .375rem .75rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: .25rem;
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}

@@ -1,0 +1,124 @@
+.sociales {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#timeline {
+  max-width: 1240px;
+  height: 350px;
+  overflow: hidden;
+  margin: 0px auto;
+  position: relative;
+  background: url('../images/dot.gif') left 45px repeat-x;
+}
+#dates {
+  width: 1240px;
+  height: 60px;
+  overflow: hidden;
+}
+#dates li {
+  list-style: none;
+  float: left;
+  width: 100px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  background: url('../images/biggerdot.png') center bottom no-repeat;
+  font-family: "CandyRose-webfont";
+}
+#dates a {
+  line-height: 38px;
+  padding-bottom: 10px;
+  color: #FFF;
+}
+#dates .selected {
+  font-size: 36px;
+  color: #ffca05;
+}
+#issues {
+  width: 1240px;
+  height: auto;
+  overflow: hidden;
+}
+#issues li {
+  width: 1240px;
+  height: auto;
+  list-style: none;
+  float: left;
+}
+#issues li.selected img {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+#issues li img {
+  float: left;
+  margin: 10px 30px 10px 50px;
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+  /* IE 8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
+  /* IE 6 & 7 */
+  zoom: 1;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  -webkit-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+}
+#issues li h1 {
+  color: #ffca05;
+  font-size: 50px;
+  margin: 20px 0px 0px 0px;
+  text-shadow: #000 1px 1px 2px;
+  font-family: "CandyRose-webfont";
+  text-align: center;
+}
+#issues li p {
+  font-size: 15px;
+  margin-right: 70px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #fff;
+  text-shadow: #000 1px 1px 2px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+#grad_left, #grad_right {
+  width: 100px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+}
+#grad_left {
+  left: 0;
+  background: none;
+}
+#grad_right {
+  right: 0;
+  background: none;
+}
+#next, #prev {
+  position: absolute;
+  top: 0;
+  font-size: 70px;
+  top: 170px;
+  width: 22px;
+  height: 38px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+#next:hover, #prev:hover {
+  background-position: 0 -76px;
+}
+#next {
+  right: 0;
+  background-image: url('../images/next.png');
+}
+#prev {
+  left: 0;
+  background-image: url('../images/prev.png');
+}
+#next.disabled, #prev.disabled {
+  opacity: 0.2;
+}
