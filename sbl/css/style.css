@@ -954,16 +954,29 @@ transition: transform 1s;
  .pro .col-md-4 {
   overflow: hidden;
  }
+
  .pro .col-md-8 {
   overflow: hidden;
  }
  .col-md-8 {
   overflow: hidden;
  }
+
  .events {
   margin-top: 30px;
   height: 370px;
   overflow: hidden;
+ }
+ body.home .container.pro .col-md-8,
+ body.home .container.pro .col-md-4,
+ body.home .container.videos .col-md-8,
+ body.home .container.videos .col-md-4,
+ body.home section.campaigns .container .col-md-4{
+  padding-right: 0px;
+  padding-left: 0px
+ }
+ body.home .events{
+  margin-top: 0px;
  }
  .events .carousel-inner {
   height: 370px;
@@ -976,8 +989,8 @@ transition: transform 1s;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-animation: zoomin 10s ease-in infinite;
-  animation: zoomin 10s ease-in infinite;
+  -webkit-animation: zoomin 20s ease-in infinite;
+  animation: zoomin 20s ease-in infinite;
   transition: all .45s ease-in-out;
   overflow: hidden;
   height: 100%;
@@ -1092,19 +1105,27 @@ transition: transform 1s;
   margin-top: 30px;
   margin-bottom: 30px;
  }
+ body.home .videos{
+  margin-top: 0px;
+  margin-bottom: 0px;
+ }
  .heritage {
   margin: 30px 0px 0px 0px;
   overflow: hidden;
   height: 370px;
  }
+ body.home  .heritage {
+  margin: 0px 0px 0px 0px;
+ }
+
  .heritage img {
   width: 100%;
   height: 100%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-animation: zoomin 30s ease-in infinite;
-  animation: zoomin 30s ease-in infinite;
+  -webkit-animation: zoomin 20s ease-in infinite;
+  animation: zoomin 20s ease-in infinite;
   transition: all .45s ease-in-out;
   overflow: hidden;
  }
@@ -1546,6 +1567,15 @@ transition: transform 1s;
  .nopadding .dropdown-menu li:hover {
   background-color: #E6E6E6;
  }
+
+ .dropdown-menu .dropdown-submenu .dropdown-menu{
+   display: none !important;
+
+ }
+
+ .dropdown-menu .dropdown-submenu:hover .dropdown-menu{
+  display: block !important;
+}
  /*------------inner pages css--------*/
 
  .bread {background-color: #edecea;}
@@ -1960,6 +1990,8 @@ ul.report li h5 {
   flex: 1 1 auto;
   padding: 1.25rem 0px;
  }
+
+
  .card-body {
   border-bottom: 1px solid rgba(235, 235, 235, .9);
  }
@@ -2575,6 +2607,11 @@ h6 {
   right: 15px;
   left: 15px;
  }
+
+ body.home .container.pro  .heritage .slider{
+  right: 0px;
+  left: 0px;
+ }
  .heritage .headingwrapper {
   transition: all 0.5s;
  }
@@ -2622,6 +2659,11 @@ h6 {
   right: 15px;
   left: 15px;
  }
+ body.home  section.campaigns .container  .campaignsimg:hover .slider{
+  right: 0px;
+  left: 0px;
+ }
+
  .campaignsimg .slider {
   opacity: 0;
  }
@@ -2661,6 +2703,11 @@ h6 {
   animation-name: fadeInUp;
   right: 15px;
   left: 15px;
+ }
+
+ body.home .container.videos  .brands:hover .slider{
+  right: 0px;
+  left: 0px;
  }
  .brands .slider {
   opacity: 0;
@@ -2721,6 +2768,14 @@ h6 {
   cursor: context-menu;
   width: 100%;
  }
+ .email-subscribe h3{
+  padding: 10px 0 5px;
+ }
+ .email-subscribe input[type=submit]{
+background:#EC1C24;
+border-color:#EC1C24;
+color:#fff;
+ }
  .nav-folderized ul li {
   list-style-type: none;
  }
@@ -2759,7 +2814,7 @@ h6 {
  /*=========timeline css=======*/
 
  .timeline {
-  background-image: url(../images/heritage.jpg);
+  /*background-image: url(../images/heritage.jpg);
   margin-top:30px;
   height: 320px;
   background-attachment: fixed;
@@ -2767,8 +2822,37 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 40px;*/
+
+ 
  }
+ 
+ .image-parallax{
+  background-image: url(../images/heritage.jpg); 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 100%;
+  height: 340px;
+  position: absolute;
+  left:0px;
+  right: 0px;
+  animation: zoomin 20s ease-in infinite;
+  overflow: hidden;
+ }
+ body.home section.timeline #timeline{
+  padding-top: 40px;
+  padding-bottom: 0px;
+  background-position:  left 85px ;
+ }
+body.home section.timeline{
+  margin-top: 0px;
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+}
+
  .timeline .container {
   max-width: 1300px
  }
