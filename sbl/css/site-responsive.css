@@ -207,6 +207,19 @@ margin-left:0px;
 
 /* =============//Small devices (landscape phones, less than 768px)===========*/
 @media (max-width: 768px) {
+body.home .container.pro .col-md-8, body.home .container.pro .col-md-4, body.home .container.videos .col-md-8, body.home .container.videos .col-md-4, body.home section.campaigns .container .col-md-4 {
+        padding:0px;
+        margin: 0px;
+        }   
+.campaignsimg {
+            height: 285px;
+        }
+
+.campaignsimg img {
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+        }
+
 #search input[type="text"]{padding-left: 0px!important;padding-right: 0px!important;font-size: 30px!important;}
 #search .form-submit {left: 35%!important;}
 .campaignsimg img{width: 100%;height: auto;}
@@ -401,7 +414,6 @@ h2 {font-size: 20px;padding: 8px 20px;}
 
 /*=====================// Extra small devices (portrait phones, less than 480px)//==========================*/
 @media (max-width:480px) {
-
 .cont h2 {padding: 10px 0px 10px 0px;}
 .searchi a {padding: 5px;}
 .heritage .slider{top: 44%;}
@@ -412,8 +424,18 @@ h2 {font-size: 20px;padding: 8px 20px;}
 .bannertitle h1 {font-size: 50px;width: 300px;line-height: 42px;}
 .bannertitle {top:25%;}
 .playpause {bottom:20%;}
-
 #cd-timeline {padding: 2em 0em;}
+body.home .container.pro .col-md-8, body.home .container.pro .col-md-4, body.home .container.videos .col-md-8, body.home .container.videos .col-md-4, body.home section.campaigns .container .col-md-4 {
+padding:0px;
+margin: 0px;
+}
+.campaignsimg {
+    height: 285px;
+}
+.campaignsimg img {
+    -webkit-transform: translate3d(0px,0px,0);
+    transform: translate3d(0px,0px,0);
+}
 }
 @media (max-width: 320px) {
 .banner.inner {height: auto;}

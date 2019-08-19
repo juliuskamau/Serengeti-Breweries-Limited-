@@ -975,6 +975,8 @@ transition: transform 1s;
   padding-right: 0px;
   padding-left: 0px
  }
+ 
+
  body.home .events{
   margin-top: 0px;
  }
@@ -1193,8 +1195,8 @@ transition: transform 1s;
  figure.effect-overlay-cool img {
   -webkit-transition: -webkit-transform 1s;
   transition: transform 1s;
-  -webkit-transform: translate3d(-16px, 0, 0) scale(1.12);
-  transform: translate3d(-16px, 0, 0) scale(1.12);
+  -webkit-transform: translate3d(0, 0, 0) scale(1.12);
+  transform: translate3d(0, 0, 0) scale(1.12);
   -webkit-backface-visibility: hidden;
   /*backface-visibility: hidden;*/
  }
@@ -2768,8 +2770,20 @@ h6 {
   cursor: context-menu;
   width: 100%;
  }
- .email-subscribe h3{
-  padding: 10px 0 5px;
+ .email-subscribe{
+  margin: 0px 0px 10px 0px;
+  float: left;
+  width: 100%;
+ }
+ .email-subscribe h2{
+  font-size: 14px;
+  color: #ffca05;
+  font-family: Lato-Black;
+  text-align: left;
+  padding: 0px;
+  width: 100%;
+  text-transform: capitalize;
+  margin: 0px 0px 10px 0px;
  }
  .email-subscribe input[type=submit]{
 background:#EC1C24;
